@@ -23,5 +23,32 @@
         </h5>
     </div>
 </footer>
+
+<div class="screen--light"></div>
+<div class="nav-main">
+    <p>
+        sitemap
+    </p>
+</div>
+<div class="burger">
+    <span class="burger__line"></span>
+    <span class="burger__line"></span>
+    <span class="burger__line"></span>
+</div>
+<script>
+    const screenLight = document.querySelector('.screen--light')
+    const burger = document.querySelector('.burger')
+    const burgerLines = burger.querySelectorAll('.burger__line')
+    const navMain = document.querySelector('.nav-main')
+
+    burger.addEventListener('click', () => {
+        screenLight.classList.toggle('screen--light--active')
+        burger.classList.toggle('burger--active')
+        burgerLines.forEach((burgerLine) => {
+            burgerLine.classList.toggle('burger--active__line--active')
+        })
+        navMain.classList.toggle('nav-main--active')
+    })
+</script>
 </body>
 </html>

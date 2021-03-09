@@ -47,10 +47,13 @@ footer {
     .container {
       h1 {
         grid-area: pti;
+        align-self: end;
+        text-align: center;
       }
 
       h3 {
         grid-area: psu;
+        text-align: center;
       }
 
       grid-template-areas:
@@ -62,51 +65,74 @@ footer {
           "pti pti pti"
           "psu psu psu";
       }
-
-      @include screen-medium {
-        grid-template-areas:
-          "... pti pti pti ..."
-          "... psu psu psu ...";
-      }
-
-      @include screen-large {
-        grid-template-areas:
-          "... ... pti pti pti ... ..."
-          "... ... psu psu psu ... ...";
-      }
     }
   }
 
   &_typography {
     .container {
+      h1 {
+        grid-area: tpa;
+      }
+
       h2 {
-        grid-area: sti;
+        grid-area: tse;
       }
 
       h3 {
-        grid-area: ssu;
+        grid-area: tsu;
+      }
+
+      h4 {
+        grid-area: hea;
+      }
+
+      h5 {
+        grid-area: foo;
+      }
+
+      h6 {
+        grid-area: ste;
+      }
+
+      p {
+        grid-area: par;
+        margin-bottom: 0;
+      }
+
+      p#blockquote_paragraph {
+        grid-area: bpa;
+        margin-bottom: 0;
+        font-size: 1.25rem;
+        line-height: 1.15;
+      }
+
+      h5#blockquote_footing {
+        grid-area: bfo;
+        text-align: end;
       }
 
       grid-template-areas:
-        "sti"
-        "ssu";
+        "tpa"
+        "tse"
+        "tsu"
+        "hea"
+        "foo"
+        "ste"
+        "par"
+        "bpa"
+        "bfo";
 
       @include screen-small {
         grid-template-areas:
-          "sti sti sti"
-          "ssu ssu ssu";
-      }
-
-      @include screen-medium {
-        grid-template-areas:
-          "... sti sti sti ..."
-          "... ssu ssu ssu ...";
-      }
-
-      @include screen-large {
-        grid-template-areas:
-          "... ... sti sti sti ... ..."
-          "... ... ssu ssu ssu ... ...";
+          "tpa tpa tpa"
+          "tse tse tse"
+          "tsu tsu tsu"
+          "hea hea hea"
+          "foo foo foo"
+          "ste ste ste"
+          "par par par"
+          "bpa bpa bpa"
+          "bfo bfo bfo";
       }
     }
   }

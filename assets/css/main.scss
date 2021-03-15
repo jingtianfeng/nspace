@@ -136,4 +136,30 @@ footer {
       }
     }
   }
+
+  &_table {
+    .container {
+      table {
+        grid-area: tat;
+      }
+
+      grid-template-areas:
+        "tat";
+
+      @include screen-small {
+        grid-template-areas:
+          "tat tat tat";
+      }
+
+      @include screen-medium {
+        grid-template-areas:
+          "tat tat tat tat tat";
+      }
+
+      @include screen-large {
+        grid-template-areas:
+          "tat tat tat tat tat tat tat";
+      }
+    }
+  }
 }

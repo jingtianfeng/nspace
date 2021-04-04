@@ -86,11 +86,11 @@ footer {
   &_typography {
     .container {
       h1 {
-        grid-area: tpa;
+        grid-area: tt1;
       }
 
       h2 {
-        grid-area: tse;
+        grid-area: tt2;
       }
 
       h3 {
@@ -98,80 +98,39 @@ footer {
       }
 
       h4 {
-        grid-area: hea;
+        grid-area: the;
       }
 
       h5 {
-        grid-area: foo;
+        grid-area: tfo;
       }
 
       h6 {
-        grid-area: ste;
+        grid-area: tsm;
       }
 
       p {
-        grid-area: par;
-      }
-
-      p#blockquote_paragraph {
-        grid-area: bpa;
-        font-size: 1.25rem;
-        line-height: 1.15;
-      }
-
-      h5#blockquote_footing {
-        grid-area: bfo;
-        text-align: end;
+        grid-area: tpa;
       }
 
       grid-template-areas:
-        "tpa"
-        "tse"
+        "tt1"
+        "tt2"
         "tsu"
-        "hea"
-        "foo"
-        "ste"
-        "par"
-        "bpa"
-        "bfo";
+        "the"
+        "tfo"
+        "tsm"
+        "tpa";
 
       @include screen-small {
         grid-template-areas:
-          "tpa tpa tpa"
-          "tse tse tse"
+          "tt1 tt1 tt1"
+          "tt2 tt2 tt2"
           "tsu tsu tsu"
-          "hea hea hea"
-          "foo foo foo"
-          "ste ste ste"
-          "par par par"
-          "bpa bpa bpa"
-          "bfo bfo bfo";
-      }
-    }
-  }
-
-  &_table {
-    .container {
-      table {
-        grid-area: tat;
-      }
-
-      grid-template-areas:
-        "tat";
-
-      @include screen-small {
-        grid-template-areas:
-          "tat tat tat";
-      }
-
-      @include screen-medium {
-        grid-template-areas:
-          "tat tat tat tat tat";
-      }
-
-      @include screen-large {
-        grid-template-areas:
-          "tat tat tat tat tat tat tat";
+          "the the the"
+          "tfo tfo tfo"
+          "tsm tsm tsm"
+          "tpa tpa tpa";
       }
     }
   }

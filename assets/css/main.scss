@@ -61,24 +61,36 @@ footer {
   &_header {
     .container {
       h1 {
-        grid-area: pti;
+        grid-area: ht1;
         align-self: end;
         text-align: center;
       }
 
       h3 {
-        grid-area: psu;
+        grid-area: hsu;
         text-align: center;
       }
 
       grid-template-areas:
-        "pti"
-        "psu";
+        "ht1"
+        "hsu";
 
       @include screen-small {
         grid-template-areas:
-          "pti pti pti"
-          "psu psu psu";
+          "ht1 ht1 ht1"
+          "hsu hsu hsu";
+      }
+
+      @include screen-medium {
+        grid-template-areas:
+          "... ht1 ht1 ht1 ..."
+          "... hsu hsu hsu ...";
+      }
+
+      @include screen-large {
+        grid-template-areas:
+          "... ... ht1 ht1 ht1 ... ..."
+          "... ... hsu hsu hsu ... ...";
       }
     }
   }
@@ -131,6 +143,27 @@ footer {
           "tfo tfo tfo"
           "tsm tsm tsm"
           "tpa tpa tpa";
+      }
+
+      @include screen-medium {
+        grid-template-areas:
+          "... tt1 tt1 tt1 ..."
+          "... tt2 tt2 tt2 ..."
+          "... tsu tsu tsu ..."
+          "... the the the ..."
+          "... tfo tfo tfo ..."
+          "... tsm tsm tsm ..."
+          "... tpa tpa tpa ...";
+      }
+
+      @include screen-large {
+        grid-template-areas:
+          "tt1 tt1 tt1 ... tpa tpa tpa"
+          "tt2 tt2 tt2 ... tpa tpa tpa"
+          "tsu tsu tsu ... tpa tpa tpa"
+          "the the the ... tpa tpa tpa"
+          "tfo tfo tfo ... tpa tpa tpa"
+          "tsm tsm tsm ... tpa tpa tpa";
       }
     }
   }

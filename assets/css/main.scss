@@ -29,30 +29,41 @@
 
 @import "nspace";
 
-footer {
+#footer {
   .container {
-    #copyright {
-      grid-area: cop;
-      text-align: center;
+    #footer_copyright,
+    #footer_signature {
       align-self: center;
+      font-size: $h5-font-size;
+      line-height: $h5-line-height;
+    }
+
+    #footer_copyright {
+      grid-area: fco;
+    }
+
+    #footer_signature {
+      grid-area: fsi;
     }
 
     grid-template-areas:
-      "cop";
+      "fco"
+      "fsi";
 
     @include screen-small {
       grid-template-areas:
-        "cop cop cop";
+        "fco fco fco"
+        "fsi fsi fsi";
     }
 
     @include screen-medium {
       grid-template-areas:
-        "cop cop cop cop cop";
+        "... fco fco fsi fsi";
     }
 
     @include screen-large {
       grid-template-areas:
-        "... cop cop cop cop cop ...";
+        "fco fco ... ... ... ... fsi";
     }
   }
 }

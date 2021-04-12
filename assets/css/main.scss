@@ -63,7 +63,7 @@
 
     @include screen-large {
       grid-template-areas:
-        "fco fco ... ... ... ... fsi";
+        "fco fco ... ... ... fsi fsi";
     }
   }
 }

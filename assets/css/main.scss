@@ -91,19 +91,11 @@
       }
 
       h3 {
-        grid-area: tsu;
+        grid-area: th1;
       }
 
       h4 {
-        grid-area: the;
-      }
-
-      h5 {
-        grid-area: tfo;
-      }
-
-      h6 {
-        grid-area: tsm;
+        grid-area: th2;
       }
 
       p {
@@ -113,20 +105,16 @@
       grid-template-areas:
         "tt1"
         "tt2"
-        "tsu"
-        "the"
-        "tfo"
-        "tsm"
+        "th1"
+        "th2"
         "tpa";
 
       @include screen-small {
         grid-template-areas:
           "tt1 tt1 tt1"
           "tt2 tt2 tt2"
-          "tsu tsu tsu"
-          "the the the"
-          "tfo tfo tfo"
-          "tsm tsm tsm"
+          "th1 th1 th1"
+          "th2 th2 th2"
           "tpa tpa tpa";
       }
 
@@ -134,10 +122,8 @@
         grid-template-areas:
           "... tt1 tt1 tt1 ..."
           "... tt2 tt2 tt2 ..."
-          "... tsu tsu tsu ..."
-          "... the the the ..."
-          "... tfo tfo tfo ..."
-          "... tsm tsm tsm ..."
+          "... th1 th1 th1 ..."
+          "... th2 th2 th2 ..."
           "... tpa tpa tpa ...";
       }
 
@@ -145,10 +131,8 @@
         grid-template-areas:
           "tt1 tt1 tt1 ... tpa tpa tpa"
           "tt2 tt2 tt2 ... tpa tpa tpa"
-          "tsu tsu tsu ... tpa tpa tpa"
-          "the the the ... tpa tpa tpa"
-          "tfo tfo tfo ... tpa tpa tpa"
-          "tsm tsm tsm ... tpa tpa tpa";
+          "th1 th1 th1 ... tpa tpa tpa"
+          "th2 th2 th2 ... tpa tpa tpa";
       }
     }
   }

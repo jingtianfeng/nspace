@@ -1,0 +1,27 @@
+.expand
+  position: relative
+  height: $icon2
+  width: $icon2
+  border: 1px solid $color-text-deco
+  border-radius: $border-radius-round
+
+  &::before
+    content: ''
+    position: absolute
+    height: 45%
+    width: 45%
+    border-top: 2px solid $color-text
+    border-right: 2px solid $color-text
+    top: 25%
+    right: 25%
+
+  &::after
+    content: ''
+    position: absolute
+    height: 65%
+    width: 65%
+    border-top: 2px solid $color-text
+    top: calc(25%)
+    right: calc(25% + 1px)
+    transform-origin: top right
+    transform: rotate(-45deg)

@@ -3,18 +3,20 @@
   position: relative
   height: 48px
   width: 48px
+  border: 1px solid $color-depth
   border-radius: $border-radius-round
+  +is-interactive
 
   &::before, &::after
     content: ""
     position: absolute
     top: 25%
-    border-top: 2px solid $color-text
+    border-top: 2px solid $color-text-deco
 
   &::before
     height: 45%
     width: 45%
-    border-right: 2px solid $color-text
+    border-right: 2px solid $color-text-deco
     right: 25%
 
   &::after

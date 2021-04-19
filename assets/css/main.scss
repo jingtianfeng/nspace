@@ -139,6 +139,8 @@
 
   &_content {
     .container {
+      grid-row-gap: $nspace5;
+
       .card1 {
         grid-area: cc1;
       }
@@ -147,25 +149,33 @@
         grid-area: cc2;
       }
 
+      .card3 {
+        grid-area: cc3;
+      }
+
       grid-template-areas:
         "cc1"
-        "cc2";
+        "cc2"
+        "cc3";
 
       @include screen-small {
         grid-template-areas:
           "cc1 cc1 cc1"
-          "cc2 cc2 cc2";
+          "cc2 cc2 cc2"
+          "cc3 cc3 cc3";
       }
 
       @include screen-medium {
         grid-template-areas:
           "... cc1 cc1 cc1 ..."
-          "... cc2 cc2 cc2 ...";
+          "... cc2 cc2 cc2 ..."
+          "... cc3 cc3 cc3 ...";
       }
 
       @include screen-large {
         grid-template-areas:
-          "cc1 cc1 cc1 ... cc2 cc2 cc2";
+          "cc1 cc1 cc1 ... cc2 cc2 cc2"
+          "cc3 cc3 cc3 ... ... ... ...";
       }
     }
   }

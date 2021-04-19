@@ -1,4 +1,4 @@
-.card1, .card2
+.card1, .card2, .card3
   display: grid
   grid-template-columns: 1fr min-content
   grid-template-rows: min-content 1fr
@@ -11,6 +11,9 @@
     font-family: $font-title
     font-size: $h4-font-size
     line-height: $h4-line-height
+
+  &__img
+    grid-area: cim
 
   &__text
     grid-area: cte
@@ -32,3 +35,20 @@
     align-self: center
 
   grid-template-areas: "che cex" "cte cte"
+
+.card3
+  box-shadow: $box-shadow-2
+  border-radius: $border-radius
+
+  &__heading
+    align-self: center
+    margin: $nspace2 0 0 $nspace3
+
+  &__img
+    border-top-left-radius: 0
+    border-top-right-radius: 0
+
+  &__expand
+    margin: $nspace2 $nspace2 0 0
+
+  grid-template-areas: "che cex" "cim cim"

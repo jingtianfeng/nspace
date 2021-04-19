@@ -143,21 +143,29 @@
         grid-area: cc1;
       }
 
+      .card2 {
+        grid-area: cc2;
+      }
+
       grid-template-areas:
-        "cc1";
+        "cc1"
+        "cc2";
 
       @include screen-small {
         grid-template-areas:
-          "cc1 cc1 cc1";
+          "cc1 cc1 cc1"
+          "cc2 cc2 cc2";
       }
 
       @include screen-medium {
         grid-template-areas:
-          "... cc1 cc1 cc1 ...";
+          "... cc1 cc1 cc1 ..."
+          "... cc2 cc2 cc2 ...";
       }
+
       @include screen-large {
         grid-template-areas:
-          "cc1 cc1 cc1 ... ... ... ...";
+          "cc1 cc1 cc1 ... cc2 cc2 cc2";
       }
     }
   }

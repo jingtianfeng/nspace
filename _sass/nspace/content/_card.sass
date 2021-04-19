@@ -1,4 +1,4 @@
-.card1
+.card1, .card2
   display: grid
   grid-template-columns: 1fr min-content
   grid-template-rows: min-content 1fr
@@ -12,9 +12,8 @@
     font-size: $h4-font-size
     line-height: $h4-line-height
 
-  &__sub
-    grid-area: csu
-    align-self: center
+  &__text
+    grid-area: cte
     color: $color-text-deco
     font-size: 1rem
     line-height: $p-line-height
@@ -22,4 +21,14 @@
   &__expand
     grid-area: cex
 
-  grid-template-areas: "csu cex" "che che"
+.card1
+  &__text
+    align-self: center
+
+  grid-template-areas: "cte cex" "che che"
+
+.card2
+  &__heading
+    align-self: center
+
+  grid-template-areas: "che cex" "cte cte"

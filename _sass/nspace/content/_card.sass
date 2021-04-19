@@ -23,6 +23,8 @@
 
   &__expand
     grid-area: cex
+    position: relative
+    left: 12px
 
 .card1
   &__text
@@ -37,18 +39,7 @@
   grid-template-areas: "che cex" "cte cte"
 
 .card3
-  box-shadow: $box-shadow-2
-  border-radius: $border-radius
-
   &__heading
     align-self: center
-    margin: $nspace2 0 0 $nspace3
-
-  &__img
-    border-top-left-radius: 0
-    border-top-right-radius: 0
-
-  &__expand
-    margin: $nspace2 $nspace2 0 0
 
   grid-template-areas: "che cex" "cim cim"

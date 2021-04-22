@@ -26,18 +26,18 @@
 
     @include screen-small {
       grid-template-areas:
-        "fco fco fco"
-        "fsi fsi fsi";
+        "fco fco"
+        "fsi fsi";
     }
 
     @include screen-medium {
       grid-template-areas:
-        "... fco fco fsi fsi";
+        "fco fco fsi fsi";
     }
 
     @include screen-large {
       grid-template-areas:
-        "fco fco ... ... ... fsi fsi";
+        "fco fco ... ... fsi fsi";
     }
   }
 }
@@ -62,20 +62,20 @@
 
       @include screen-small {
         grid-template-areas:
-          "ht1 ht1 ht1"
-          "hsu hsu hsu";
+          "ht1 ht1"
+          "hsu hsu";
       }
 
       @include screen-medium {
         grid-template-areas:
-          "... ht1 ht1 ht1 ..."
-          "... hsu hsu hsu ...";
+          "... ht1 ht1 ..."
+          "... hsu hsu ...";
       }
 
       @include screen-large {
         grid-template-areas:
-          "... ... ht1 ht1 ht1 ... ..."
-          "... ... hsu hsu hsu ... ...";
+          "... ... ht1 ht1 ... ..."
+          "... ... hsu hsu ... ...";
       }
     }
   }
@@ -111,28 +111,28 @@
 
       @include screen-small {
         grid-template-areas:
-          "tt1 tt1 tt1"
-          "tt2 tt2 tt2"
-          "th1 th1 th1"
-          "th2 th2 th2"
-          "tpa tpa tpa";
+          "tt1 tt1"
+          "tt2 tt2"
+          "th1 th1"
+          "th2 th2"
+          "tpa tpa";
       }
 
       @include screen-medium {
         grid-template-areas:
-          "... tt1 tt1 tt1 ..."
-          "... tt2 tt2 tt2 ..."
-          "... th1 th1 th1 ..."
-          "... th2 th2 th2 ..."
-          "... tpa tpa tpa ...";
+          "tt1 tt1 tt1 tt1"
+          "tt2 tt2 tt2 tt2"
+          "th1 th1 th1 th1"
+          "th2 th2 th2 th2"
+          "tpa tpa tpa tpa";
       }
 
       @include screen-large {
         grid-template-areas:
-          "tt1 tt1 tt1 ... tpa tpa tpa"
-          "tt2 tt2 tt2 ... tpa tpa tpa"
-          "th1 th1 th1 ... tpa tpa tpa"
-          "th2 th2 th2 ... tpa tpa tpa";
+          "tt1 tt1 tt1 tpa tpa ..."
+          "tt2 tt2 tt2 tpa tpa ..."
+          "th1 th1 th1 tpa tpa ..."
+          "th2 th2 th2 tpa tpa ...";
       }
     }
   }
@@ -160,22 +160,22 @@
 
       @include screen-small {
         grid-template-areas:
-          "cc1 cc1 cc1"
-          "cc2 cc2 cc2"
-          "cc3 cc3 cc3";
+          "cc1 cc1"
+          "cc2 cc2"
+          "cc3 cc3";
       }
 
       @include screen-medium {
         grid-template-areas:
-          "... cc1 cc1 cc1 ..."
-          "... cc2 cc2 cc2 ..."
-          "... cc3 cc3 cc3 ...";
+          "... cc1 cc1 ..."
+          "... cc2 cc2 ..."
+          "... cc3 cc3 ...";
       }
 
       @include screen-large {
         grid-template-areas:
-          "cc1 cc1 cc1 ... cc2 cc2 cc2"
-          "cc3 cc3 cc3 ... ... ... ...";
+          "cc1 cc1 ... cc2 cc2 ..."
+          "cc3 cc3 ... ... ... ...";
       }
     }
   }

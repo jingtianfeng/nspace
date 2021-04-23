@@ -27,12 +27,15 @@ body
       grid-row-gap: $nspace3
       margin: auto
       +screen-small
+        grid-row-gap: $layout-padding-small
         grid-template-columns: repeat($screen-small-column-nbr, minmax($grid-column-width-min, $grid-column-width-max))
         max-width: $screen-small-column-nbr * $grid-column-width-max
       +screen-medium
+        grid-row-gap: $layout-padding-medium
         grid-template-columns: repeat($screen-medium-column-nbr, minmax($grid-column-width-min, $grid-column-width-max))
         max-width: $screen-medium-column-nbr * $grid-column-width-max
       +screen-large
+        grid-row-gap: $layout-padding-large
         grid-template-columns: repeat($screen-large-column-nbr, minmax($grid-column-width-min, $grid-column-width-max))
         max-width: $screen-large-column-nbr * $grid-column-width-max
 

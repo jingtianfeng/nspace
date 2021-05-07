@@ -1,5 +1,8 @@
 fieldset
-  border: none
+  min-width: 0
+  margin: 0
+  padding: 0
+  border: 0
 
 input,
 textarea
@@ -70,9 +73,13 @@ select
   border-left: none
   border-right: none
   padding: 0 $nspace1
+  word-wrap: normal
 
   label + &
     margin-left: $nspace3
+
+  &:disabled
+    opacity: 1
 
 input[type="checkbox"],
 input[type="radio"]

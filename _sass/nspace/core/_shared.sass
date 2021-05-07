@@ -1,3 +1,11 @@
+*,
+*::before,
+*::after
+  box-sizing: border-box
+
+*:focus
+  outline: none
+
 html,
 body,
 p,
@@ -29,19 +37,6 @@ input,
 select,
 textarea
   margin: 0
-
-html
-  box-sizing: border-box
-  -webkit-tap-highlight-color: transparent
-
-*
-  &,
-  &::before,
-  &::after
-    box-sizing: inherit
-
-*:focus
-  outline: none
 
 article,
 aside,
@@ -77,3 +72,6 @@ video
 
 iframe
   border: 0
+
+body
+  -webkit-tap-highlight-color: transparent

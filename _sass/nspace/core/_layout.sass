@@ -41,13 +41,13 @@ body
 
   > header
     > .container
-      min-height: calc(100vh - 2 * #{$nspace1})
+      min-height: calc(100vh - 2 * #{$nspace1} - #{$navbar-min-height})
       +screen-small
-        min-height: calc(100vh - 2 * #{$layout-padding-small})
+        min-height: calc(100vh - 2 * #{$layout-padding-small} - #{$navbar-min-height})
       +screen-medium
-        min-height: calc(100vh - 2 * #{$layout-padding-medium})
+        min-height: calc(100vh - 2 * #{$layout-padding-medium} - #{$navbar-min-height})
       +screen-large
-        min-height: calc(100vh - 2 * #{$layout-padding-large})
+        min-height: calc(100vh - 2 * #{$layout-padding-large} - #{$navbar-min-height})
 
   > section
     > .container

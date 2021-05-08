@@ -1,6 +1,8 @@
 .navbar {
   min-height: $navbar-min-height;
   padding: $nspace1;
+  background-color: $color-bg-header;
+  
   @include screen-small {
     padding: $layout-padding-small;
   }

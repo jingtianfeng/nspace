@@ -1,0 +1,87 @@
+.navbar {
+  min-height: $navbar-min-height;
+  padding: $nspace1;
+  @include screen-small {
+    padding: $layout-padding-small;
+  }
+  @include screen-medium {
+    padding: $layout-padding-small $layout-padding-medium;
+  }
+  @include screen-large {
+    padding: $layout-padding-small $layout-padding-large;
+  }
+
+  &__container {
+    display: grid;
+    align-items: center;
+    margin: 0 auto;
+    grid-template-columns: repeat($screen-small-column-nbr, minmax($grid-column-width-min, $grid-column-width-max));
+    max-width: $screen-small-column-nbr * $grid-column-width-max;
+
+    @include screen-medium {
+      grid-template-columns: repeat($screen-medium-column-nbr, minmax($grid-column-width-min, $grid-column-width-max));
+      max-width: $screen-medium-column-nbr * $grid-column-width-max;
+    }
+    @include screen-large {
+      grid-template-columns: repeat($screen-large-column-nbr, minmax($grid-column-width-min, $grid-column-width-max));
+      max-width: $screen-large-column-nbr * $grid-column-width-max;
+    }
+
+    &__logo {
+      grid-area: nlo;
+    }
+
+    &__menu-toggle {
+      grid-area: nmt;
+      margin-left: auto;
+
+      @include screen-medium {
+        display: none;
+      }
+    }
+
+    &__menu {
+      grid-area: nme;
+      display: none;
+      min-height: calc(100vh - #{$navbar-min-height});
+      padding-top: $nspace3;
+
+      @include screen-medium {
+        display: flex;
+        align-items: center;
+        min-height: 0;
+        padding-top: 0;
+        margin-left: auto;
+      }
+
+      &__link {
+        display: block;
+        margin: $nspace4 0;
+        @include screen-medium {
+          margin: 0;
+          &:not(:first-child) {
+            margin-left: $nspace4;
+          }
+        }
+      }
+
+      &--active {
+        display: block;
+      }
+    }
+
+    grid-template-areas:
+      "nlo nmt"
+      "nme nme";
+
+    @include screen-medium {
+      grid-template-areas:
+        "nlo ... nme nme";
+    }
+
+    @include screen-large {
+      grid-template-areas:
+        "nlo ... ... ... ... nme nme";
+    }
+  }
+}

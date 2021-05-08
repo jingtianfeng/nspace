@@ -2,13 +2,15 @@
   min-height: $navbar-min-height;
   padding: $nspace1;
   background-color: $color-bg-header;
-  
+
   @include screen-small {
     padding: $layout-padding-small;
   }
+
   @include screen-medium {
     padding: $layout-padding-small $layout-padding-medium;
   }
+
   @include screen-large {
     padding: $layout-padding-small $layout-padding-large;
   }
@@ -17,6 +19,7 @@
     display: grid;
     align-items: center;
     margin: 0 auto;
+
     grid-template-columns: repeat($screen-small-column-nbr, minmax($grid-column-width-min, $grid-column-width-max));
     max-width: $screen-small-column-nbr * $grid-column-width-max;
 
@@ -24,6 +27,7 @@
       grid-template-columns: repeat($screen-medium-column-nbr, minmax($grid-column-width-min, $grid-column-width-max));
       max-width: $screen-medium-column-nbr * $grid-column-width-max;
     }
+
     @include screen-large {
       grid-template-columns: repeat($screen-large-column-nbr, minmax($grid-column-width-min, $grid-column-width-max));
       max-width: $screen-large-column-nbr * $grid-column-width-max;
@@ -59,6 +63,7 @@
       &__link {
         display: block;
         margin: $nspace4 0;
+
         @include screen-medium {
           margin: 0;
           &:not(:first-child) {

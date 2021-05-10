@@ -49,31 +49,22 @@
     &__menu {
       grid-area: nme;
       display: none;
-      min-height: calc(100vh - #{$navbar-min-height});
-      padding-top: $nspace5;
+      padding-top: $nspace3;
 
       @include screen-medium {
         display: flex;
         align-items: center;
-        min-height: 0;
         padding-top: 0;
         margin-left: auto;
       }
 
       &__link {
         display: block;
-        margin-top: $nspace4;
-        margin-left: $nspace3 + 8px;
-        font-size: 2.625rem;
-        line-height: 0.75;
+        line-height: 2;
 
         @include screen-medium {
-          margin: 0;
-          font-size: $root-font-size;
-          line-height: $root-line-height;
-
           &:not(:first-child) {
-            margin-left: $nspace4;
+            margin-left: $nspace5;
           }
         }
       }
@@ -89,12 +80,12 @@
 
     @include screen-medium {
       grid-template-areas:
-        "nlo ... nme nme";
+        "nlo nme nme nme";
     }
 
     @include screen-large {
       grid-template-areas:
-        "nlo ... ... ... ... nme nme";
+        "nlo ... ... ... nme nme nme";
     }
   }
 }

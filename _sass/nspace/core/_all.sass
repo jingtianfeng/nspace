@@ -10,6 +10,13 @@
   @media screen and (min-width: $screen-large-column-nbr * $grid-column-width-min + 2*$layout-padding-large)
     @content
 
+=is-unselectable
+  -webkit-touch-callout: none
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+
 @import "shared"
 @import "layout"
 @import "typography"
